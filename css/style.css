@@ -1,0 +1,62 @@
+body {
+    max-width: 80%;
+    margin-left: 10%;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Logo Menu Menu Menu" "Image Image Image Image" "Content Content Content Content" "Footer Footer Footer Footer";
+}
+
+.Logo { grid-area: Logo; 
+  text-align: center;
+  height: 2em;
+  margin-top: -0.5em;
+  margin-right: -4em;
+}
+
+.Menu { grid-area: Menu;
+background-color: #584a49;
+color: #d9dcd3;
+width: 90%;
+}
+.Menu a {
+    color: #d9dcd3;
+    text-decoration: none;
+}
+
+.Menu a:hover {
+    text-decoration: underline;
+}
+.Menu li {
+    display: inline;
+    margin-left:2em;
+    size: 2em;
+}
+
+
+.Image { grid-area: Image; }
+
+.Image img {
+    max-width: 80%;
+    margin-left: 12%;
+    margin-top:1em;    
+}
+
+.Content { grid-area: Content; 
+    max-width: 80%;
+    margin-left: 10%;
+    background-color: #f4f3f3;
+    padding: 1em;
+    margin-top:1em;
+
+}
+
+.Footer { grid-area: Footer;
+    text-align: center;
+    margin-top:2em;
+
+}
